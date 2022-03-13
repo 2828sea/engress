@@ -1,0 +1,56 @@
+@use "global" as *;
+
+
+/**********************************/
+/* ハンバーガーメニューSP用 */
+/**********************************/
+.p-hamburger {
+  position: absolute;
+  z-index: 3;
+  right: rem(13);
+  top: 50%;
+  transform: translateY(-50%);
+  width: rem(40);
+  height: rem(40);
+  cursor: pointer;
+  text-align: center;
+}
+.p-hamburger span {
+  display: block;
+  position: absolute;
+  width: rem(30);
+  height: rem(2);
+  left: rem(6);
+  background: #555;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.p-hamburger span:nth-child(1) {
+  top: rem(10);
+}
+.p-hamburger span:nth-child(2) {
+  top: rem(20);
+}
+.p-hamburger span:nth-child(3) {
+  top: rem(30);
+}
+
+/* ナビ開いてる時のバツボタン */
+.p-hamburger.active span:nth-child(1) {
+  top: rem(20);
+  left: rem(6);
+  background: #fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.p-hamburger.active span:nth-child(2),
+.p-hamburger.active span:nth-child(3) {
+  top: rem(20);
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
