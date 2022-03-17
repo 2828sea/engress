@@ -70,4 +70,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   })
 
+  // **********************************
+//  アコーディオン
+// **********************************
+
+    $(".js-accordion").on("click", function() {
+    $(this).next().slideToggle();
+    $(this).toggleClass("active");
+    });
+
 });

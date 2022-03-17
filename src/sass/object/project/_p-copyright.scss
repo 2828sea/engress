@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.p-copyright {
+  text-align: right;
+  font-size: rem(12);
+  font-weight: $bold;
+  line-height: 1;
+}

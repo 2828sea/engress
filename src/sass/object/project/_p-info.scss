@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.p-info {
+
+}
+
+.p-info + .p-info {
+  margin-top: rem(54);
+  display: block;
+  @include mq(md){
+    margin-top: rem(20);
+  }
+}
+
+.p-info__date {
+  font-size: rem(12);
+  line-height: 1;
+}
+
+.p-info__title {
+  font-size: rem(16);
+  text-decoration: underline;
+  margin-top: rem(10);
+  line-height: 1;
+  @include mq(md){
+    margin-top: 0;
+  }
+}

@@ -15,7 +15,7 @@ html {
   }
 
   //inner~max-screen
-  @media (min-width: $inner) {
+  @media (max-width: $inner) {
     font-size: 16px;
   }
 }

@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.p-article {
+  width: 100%;
+  display: flex;
+  // align-items: flex-start;
+}
+
+.p-article + .p-article {
+  margin-top: rem(31);
+}
+
+.p-article__img {
+  position: relative;
+  display: block;
+  flex: 1;
+}
+
+.p-article__img::before {
+  content: "";
+  padding-top: 73.333333%;
+  display: block;
+}
+
+.p-article__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-article__label {
+  padding: rem(6) rem(9);
+  background-color: $sub;
+  color: $white;
+  font-size: rem(12);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.p-article__body {
+  width: 60.4651163%;
+  margin-left: rem(20);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-article__title {
+  font-weight: $bold;
+  text-decoration: underline;
+  font-size: rem(16);
+}
+
+.p-article__date {
+  font-size: rem(12);
+}

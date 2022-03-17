@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.p-news {
+  flex: 1;
+  margin-left: rem(67);
+  @include mq(md){
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.p-news__title {
+  font-size: rem(32);
+  line-height: 1;
+  font-weight: $bold;
+  @include mq(md){
+    font-size: rem(24);
+  }
+}
+
+.p-news__items {
+  margin-top: rem(30);
+}

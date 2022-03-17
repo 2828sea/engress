@@ -1,0 +1,82 @@
+@use "global" as *;
+
+.p-about {
+  background-color: $sub;
+}
+
+.p-about__title {
+  font-size: rem(34);
+  line-height: 1;
+  font-weight: $bold;
+  color: $white;
+  text-align: center;
+  letter-spacing: 0.05em;
+  @include mq(md){
+    font-size: rem(24);
+  }
+}
+
+.p-about__items {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(56);
+  @include mq(md){
+    margin-top: rem(36);
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.p-about__item {
+  color: $white;
+  font-size: rem(18);
+  font-weight: $bold;
+  line-height: 2.16666667;
+  text-align: center;
+  @include mq(md){
+    text-align: left;
+    font-size: rem(16);
+  }
+}
+
+.p-about__item + .p-about__item {
+  margin-left: rem(57);
+  @include mq(md){
+    margin-left: 0;
+  }
+}
+
+.p-about__wrapper {
+  background-color: $white;
+  padding: rem(11) rem(16);
+  margin-top: rem(70);
+  @include mq(md){
+    margin-top: rem(30);
+  }
+}
+
+.p-about__box {
+  border: 5px solid $sub;
+  padding: rem(10) rem(10) rem(22) rem(10);
+}
+
+.p-about__copy {
+  font-size: rem(36);
+  font-weight: $bold;
+  line-height: 1.38888889;
+  text-align: center;
+  @include mq(md){
+    font-size: rem(24);
+  }
+}
+
+.p-about__copy span {
+  background: linear-gradient(transparent 70%, $main 70%);
+}
+
+.p-about__text {
+  margin-top: rem(22);
+  font-size: rem(18);
+  line-height: 1.722222;
+  text-align: center;
+}

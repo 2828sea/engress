@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.p-contact__inner {
+  background-image: url(../images/common/contact-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: rem(70) rem(25) rem(36);
+  text-align: center;
+}
+
+.p-contact__title {
+  font-size: rem(32);
+  color: $white;
+  line-height: 1;
+  font-weight: $bold;
+  @include mq(md){
+    font-size: rem(24);
+  }
+}
+
+.p-contact__button {
+  margin-top: rem(25);
+}
+
+.p-contact__button a {
+  background-color: $main;
+  color: $white;
+  max-width: rem(280);
+  width: 100%;
+  padding: rem(17);
+}
+
+.p-contact__link {
+  margin-top: rem(22);
+  color: $white;
+  display: inline-block;
+  text-decoration: underline;
+  line-height: 1;
+}
+
+.p-contact__box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: rem(22) rem(25);
+  @include mq(md){
+    flex-direction: column;
+  }
+}
+
+.p-contact__text {
+  font-weight: $bold;
+}
+
+.p-contact__tel {
+  display: inline-block;
+  font-size: rem(36);
+  line-height: 1;
+  font-weight: $bold;
+  margin-left: rem(20);
+}
+
+.p-contact__time {
+  margin-left: rem(20);
+}

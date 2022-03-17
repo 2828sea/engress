@@ -5,15 +5,19 @@
 /* ハンバーガーメニューSP用 */
 /**********************************/
 .p-hamburger {
-  position: absolute;
-  z-index: 3;
-  right: rem(13);
-  top: 50%;
-  transform: translateY(-50%);
-  width: rem(40);
-  height: rem(40);
-  cursor: pointer;
-  text-align: center;
+  display: none;
+  @include mq(lg){
+    position: absolute;
+    z-index: 3;
+    right: rem(13);
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(40);
+    height: rem(40);
+    cursor: pointer;
+    text-align: center;
+    display: block;
+  }
 }
 .p-hamburger span {
   display: block;

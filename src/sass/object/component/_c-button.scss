@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.c-button {
+  padding: rem(22);
+  display: inline-block;
+  font-weight: $bold;
+  border-radius: rem(30);
+  text-align: center;
+  line-height: 1;
+}
