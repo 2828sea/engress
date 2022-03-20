@@ -1,0 +1,92 @@
+@use "global" as *;
+
+.p-sub-contact__inner {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 700px + strip-unit($padding-pc) * 2;
+  padding-right: $padding-pc;
+  padding-left: $padding-pc;
+  @include mq("md") {
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+  }
+}
+
+.p-sub-contact__company {
+  border: 0.5px solid $sub;
+  width: 100%;
+  margin-top: rem(12);
+}
+
+.p-sub-contact__name {
+  border: 0.5px solid $sub;
+  width: 100%;
+  margin-top: rem(12);
+}
+
+.p-sub-contact__email {
+  border: 0.5px solid $sub;
+  width: 100%;
+  margin-top: rem(12);
+}
+
+.p-sub-contact__tel {
+  border: 0.5px solid $sub;
+  width: 100%;
+  margin-top: rem(12);
+}
+
+.p-sub-contact__textarea {
+  border: 0.5px solid $sub;
+  width: 100%;
+  margin-top: rem(12);
+}
+
+.p-sub-contact__submit {
+  padding: rem(17);
+  max-width: rem(200);
+  width: 100%;
+  background-color: $sub;
+  color: $white;
+  border-radius: rem(5);
+  line-height: 1;
+}
+
+.p-sub-contact__form p:nth-child(odd) {
+  margin-top: rem(20);
+}
+
+.p-sub-contact__form input::placeholder {
+  font-size: rem(12);
+  color: #B4B4B4;
+}
+
+.p-sub-contact__form input {
+  padding: rem(15);
+}
+
+
+
+//リセットcss調整
+.p-sub-contact__radio {
+  appearance: auto;
+  margin-top: rem(18);
+}
+
+.p-sub-contact__check {
+  appearance: auto;
+  margin-top: rem(18);
+}
+
+.p-sub-contact__check::value {
+  text-decoration: underline;
+}
+
+.p-sub-contact__form input[type=checkbox], input[type=radio] {
+  display: inline-block;
+}
+
+.p-sub-contact__form a span {
+  text-decoration: underline;
+}

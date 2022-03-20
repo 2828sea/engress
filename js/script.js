@@ -79,4 +79,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(this).toggleClass("active");
     });
 
+
+// **********************************
+//  スクロールヒント
+// **********************************
+
+    new ScrollHint('.js-scrollable', {
+      suggestiveShadow: false,
+      i18n: {
+        scrollable: 'スクロールできます'
+      }
+    });
+
 });

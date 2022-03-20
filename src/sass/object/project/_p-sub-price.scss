@@ -1,0 +1,75 @@
+@use "global" as *;
+
+.p-sub-price {
+
+}
+
+.p-sub-price__title {
+  text-align: center;
+  font-size: rem(32);
+  font-weight: $bold;
+  line-height: 1;
+  @include mq(md){
+    font-size: rem(24);
+  }
+}
+
+.p-sub-price__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: rem(60);
+  @include mq(md){
+    flex-direction: column;
+  }
+}
+
+.p-sub-price__item {
+  background-color: $sub;
+  color: $white;
+  padding: rem(34) rem(58);
+  min-width: rem(280);
+  font-size: rem(22);
+  font-weight: $bold;
+  line-height: 1;
+  text-align: center;
+  @include mq(md){
+    max-width: rem(600);
+    width: 100%;
+    min-width: initial;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: rem(16);
+  }
+}
+
+.p-sub-price__plus {
+  display: inline-block;
+  position: relative;
+  width: rem(18);
+  height: rem(18);
+  margin: 0 rem(35);
+  @include mq(md){
+    margin: rem(20);
+  }
+}
+.p-sub-price__plus:before, .p-sub-price__plus:after {
+  display: block;
+  content: '';
+  background-color: $sub;
+  position: absolute;
+  width: rem(18);
+  height: rem(2);
+  top: rem(8);
+  left: 0;
+}
+.p-sub-price__plus:before {
+  width: rem(2);
+  height: rem(18);
+  top: 0;
+  left: rem(8);
+}
+
+.p-sub-price__text {
+  margin-top: rem(46);
+}

@@ -1,0 +1,110 @@
+@use "global" as *;
+
+.p-table {
+  max-width: calc(25% - #{rem(6)} *3 / 4);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-table + .p-table {
+  margin-left: rem(6);
+}
+
+.p-table:nth-child(3) {
+  .p-table__title {
+    background-color: $main;
+  }
+
+  .p-table__body {
+    border-top: none;
+  }
+
+  .p-table__price {
+    color: $main;
+  }
+}
+
+.p-table:nth-child(4) li::before {
+  content: none;
+}
+
+.p-table:nth-child(4) li {
+  padding: 0 rem(12.5);
+}
+
+//3つめ以外
+.p-table:not(:nth-child(3)) {
+  margin-top: rem(36);
+}
+
+.p-table__suggest {
+  background-color: $main;
+  color: $white;
+  line-height: 1;
+  padding-top: rem(20);
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.p-table__title {
+  color: $white;
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1;
+  background-color: $sub;
+  width: 100%;
+  padding: rem(17) rem(20);
+  text-align: center;
+}
+
+.p-table__body {
+  padding: rem(30) rem(24) rem(94);
+  text-align: center;
+  height: 100%;
+  border: 1px solid $sub;
+  @include mq(md){
+    padding-bottom: rem(40);
+  }
+}
+
+.p-table__price {
+  font-size: rem(25);
+  font-weight: $bold;
+  line-height: 1;
+}
+
+.p-table__text {
+  font-size: rem(16);
+  line-height: 1;
+  margin-top: rem(14);
+}
+
+.p-table__items {
+  margin-top: rem(51);
+}
+
+.p-table__item {
+  font-size: rem(16);
+  line-height: 1;
+  position: relative;
+  padding-left: rem(23);
+}
+
+.p-table__item + .p-table__item {
+  margin-top: rem(20);
+}
+
+.p-table__item::before {
+  content: "";
+  border-left: 3px solid $sub;
+  border-bottom: 3px solid $sub;
+  width: rem(14);
+  height: rem(9);
+  position: absolute;
+  top: rem(2);
+  left: 0;
+  transform: rotate(-45deg);
+}

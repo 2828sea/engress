@@ -1,0 +1,82 @@
+@use "global" as *;
+
+.p-area {
+  width: 65.555556%;
+  @include mq(lg){
+    max-width: rem(600);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.p-area__label {
+  padding: rem(9) rem(25);
+  background-color: $sub;
+  color: $white;
+  font-size: rem(12);
+  line-height: 1;
+  display: inline-block;
+}
+
+.p-area__title {
+  font-size: rem(28);
+  margin-top: rem(30);
+  @include mq(md){
+    font-size: rem(24);
+  }
+}
+
+.p-area__date {
+  text-align: right;
+  display: block;
+  @include mq(md){
+    font-size: rem(12);
+  }
+}
+
+.p-area__body {
+  margin-top: rem(21);
+  position: relative;
+  @include mq(md){
+    // margin-top: rem(30);
+  }
+}
+
+.p-area__body {
+  p {
+    padding: rem(8) 0;
+  }
+}
+
+//シェアボタン
+
+.p-area__body {
+  .addtoany_share_save_container {
+    position: absolute;
+    top: 0;
+    left: rem(-10);
+    margin: 0;
+  }
+  .addtoany_list {
+    display: flex;
+    line-height: 1;
+  }
+  //shareボタン
+  .addtoany_no_icon {
+    line-height: 20px;
+    background-color: #305097;
+    color: $white;
+    width: rem(44);
+    height: rem(20);
+    font-size: rem(10);
+    font-weight: $bold;
+    text-align: center;
+    border-radius: rem(3);
+  }
+  //twitter
+  .twitter-share-button {
+    background-color: #1d9bf0;
+    border-radius: rem(3);
+  }
+}

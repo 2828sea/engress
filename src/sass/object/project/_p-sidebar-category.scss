@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.p-sidebar-category {
+
+}
+
+.p-sidebar-category__items {
+  margin-top: rem(30);
+}
+
+.p-sidebar-category__items li {
+  list-style: initial;
+  list-style-position: inside;
+}
+
+.p-sidebar-category__items li:nth-child(n + 2) {
+  margin-top: rem(7);
+}

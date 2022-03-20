@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.p-sub-blog {
+
+}
+
+.p-sub-blog__title {
+  font-size: rem(32);
+  font-weight: $bold;
+  line-height: 1;
+  text-align: center;
+  @include mq(md){
+    font-size: rem(24);
+  }
+}
+
+.p-sub-blog__items {
+  margin-top: rem(45);
+}
+
+
+.p-sub-blog__date {
+  line-height: 1.5;
+  font-size: rem(16);
+  @include mq(md){
+    font-size: rem(12);
+  }
+}
+
+.p-sub-blog__text {
+  font-size: rem(16);
+  margin-left: rem(51);
+  line-height: 1.5;
+  @include mq(md){
+    margin-left: 0;
+    margin-top: rem(10);
+  }
+}

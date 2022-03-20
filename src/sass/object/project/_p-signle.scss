@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.p-single__title {
+  font-size: rem(28);
+  @include mq(md){
+    font-size: rem(24);
+  }
+}
+
+.p-single__date {
+  text-align: right;
+  display: block;
+  margin-top: rem(36);
+  @include mq(md){
+    margin-top: rem(18);
+    font-size: rem(12);
+  }
+}
+
+.p-single__body {
+  margin-top: rem(60);
+  @include mq(md){
+    margin-top: rem(30);
+  }
+}
+
+.p-single__body {
+  p {
+    padding: rem(8) 0;
+  }
+}

@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.p-single-blog__inner {
+  display: flex;
+  @include mq(lg){
+    flex-direction: column;
+  }
+}

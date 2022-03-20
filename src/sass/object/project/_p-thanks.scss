@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.p-thanks {
+
+}
+
+.p-thanks__text {
+  text-align: center;
+}
+
+.p-thanks__link {
+  margin-top: rem(83);
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+}

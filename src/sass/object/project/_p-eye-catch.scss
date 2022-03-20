@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.p-eye-catch {
+  position: relative;
+}
+
+.p-eye-catch__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: rem(32);
+  font-weight: $bold;
+  @include mq(md){
+    font-size: rem(24);
+  }
+}
+
+.p-eye-catch__img {
+  position: relative;
+  width: 100%;
+}
+
+.p-eye-catch__img::before {
+  content: "";
+  padding-top: 17.265625%;
+  display: block;
+  @include mq(md){
+    padding-top: 34%;
+  }
+}
+
+.p-eye-catch__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
