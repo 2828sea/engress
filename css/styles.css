@@ -65,6 +65,10 @@ body {
   color: #1B224C;
 }
 
+body.fixed {
+  position: fixed;
+}
+
 *,
 *::before,
 *::after {
@@ -475,6 +479,7 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .p-area__date {
     font-size: 0.75rem;
+    padding-top: 1.875rem;
   }
 }
 
@@ -824,7 +829,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .p-contact__title {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 }
 
@@ -886,6 +891,11 @@ select::-ms-expand {
   font-weight: 700;
   margin-left: 20px;
   margin-left: 1.25rem;
+}
+@media screen and (max-width: 768px) {
+  .p-contact__tel {
+    font-size: 1.25rem;
+  }
 }
 
 .p-contact__time {
@@ -1336,7 +1346,7 @@ select::-ms-expand {
   top: 0;
   left: 0;
   color: #fff;
-  background: #333;
+  background: #F5A623;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -1482,6 +1492,11 @@ nav.p-globalMenuSp.active {
           align-items: center;
   padding: 15px 22px;
   padding: 0.9375rem 1.375rem;
+}
+
+.p-header__logo {
+  position: relative;
+  z-index: 9;
 }
 
 /* PC用ナビメニュー */
@@ -2367,6 +2382,14 @@ nav.p-globalMenuSp.active {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .p-sub-article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .p-sub-article + .p-sub-article {
   margin-top: 31px;
@@ -2379,6 +2402,14 @@ nav.p-globalMenuSp.active {
   max-width: 240px;
   max-width: 15rem;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .p-sub-article__img {
+    max-width: 37.5rem;
+    width: 100;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .p-sub-article__img::before {
@@ -2428,6 +2459,14 @@ nav.p-globalMenuSp.active {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .p-sub-article__body {
+    max-width: 37.5rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .p-sub-article__title {
   font-weight: 700;
@@ -2436,10 +2475,20 @@ nav.p-globalMenuSp.active {
   font-size: 1.625rem;
   line-height: 1.5;
 }
+@media screen and (max-width: 768px) {
+  .p-sub-article__title {
+    font-size: 1.25rem;
+  }
+}
 
 .p-sub-article__date {
   font-size: 16px;
   font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .p-sub-article__date {
+    font-size: 0.75rem;
+  }
 }
 
 .p-sub-blog__title {

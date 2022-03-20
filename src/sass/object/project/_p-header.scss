@@ -22,6 +22,11 @@
   padding: rem(15) rem(22);
 }
 
+.p-header__logo {
+  position: relative;
+  z-index: 9;
+}
+
 /* PC用ナビメニュー */
 .p-header__nav {
   // margin-left: auto;

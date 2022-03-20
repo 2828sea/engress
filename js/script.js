@@ -62,6 +62,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   $('.js-hamburger').click(function () {
     $(this).toggleClass('active')
+    $('body').toggleClass('fixed')
 
     if ($(this).hasClass('active')) {
       $('.js-globalMenuSp').addClass('active')

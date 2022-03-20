@@ -63,19 +63,22 @@ $contact = esc_url(home_url('/contact/'));
     <nav class="p-globalMenuSp js-globalMenuSp">
       <ul id="menu">
         <li class="p-globalMenuSp__link">
-          <a href="#">Menu1だお</a>
+          <a href="<?php echo $home ?>">ホーム</a>
         </li>
         <li class="p-globalMenuSp__link">
-          <a href="#">Menu2だお</a>
+          <a href="<?php echo $news ?>">お知らせ</a>
         </li>
         <li class="p-globalMenuSp__link">
-          <a href="#">Menu3だお</a>
+          <a href="<?php echo $blog ?>">ブログ</a>
         </li>
         <li class="p-globalMenuSp__link">
-          <a href="#">Menu4だお</a>
+          <a href="<?php echo $price ?>">コース・料金</a>
         </li>
         <li class="p-globalMenuSp__link">
-          <a href="#">Menu5だお</a>
+          <a href="<?php echo $contact ?>">資料請求</a>
+        </li>
+        <li class="p-globalMenuSp__link">
+          <a href="<?php echo $contact ?>">お問い合わせ</a>
         </li>
       </ul>
     </nav>

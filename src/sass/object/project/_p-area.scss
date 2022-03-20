@@ -32,6 +32,7 @@
   display: block;
   @include mq(md){
     font-size: rem(12);
+    padding-top: rem(30);
   }
 }
 
